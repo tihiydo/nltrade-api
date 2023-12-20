@@ -17,4 +17,6 @@ markdown_extensions:
 nav:
   - Головна: index.md
   - Формування запитів: forming-requests.md
-  - Створення запитів: create-request.md
+  - Створення Invoice: create-invoice.md
+  - Видалення Invoice: remove-invoice.md
+  - Процесс виконання заявки: proccess-invoice.md
