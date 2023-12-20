@@ -95,7 +95,7 @@ const rsaKey = caesarEncrypt(atob(jsonResponse.response.data.result), -13)
 Приклад повного запиту, з зашифрованним поле `data`:
 ``` json
 {
-   "access_token": "vtz2mxq978k4clb51efrapsjdgio3uhy", 
    "data": "GAglei+idcMYwHiMALs2hGr/Te6opknMMS0OhePiR..."
+   "access_token": "vtz2mxq978k4clb51efrapsjdgio3uhy", 
 }
 ```
