@@ -87,7 +87,7 @@ const rsaKey = caesarEncrypt(atob(jsonResponse.response.data.result), -13)
 Приклад не зашифрованного поля data (JSON поле, що містить JSON), що ви повинні зашифрувати, а потім передати на сервер:
 ``` json
 {
-   "type": "list"
+   "type": "list",
    "verificationWord": "bandasosamba"
 }
 ```
