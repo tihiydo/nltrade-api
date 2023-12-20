@@ -14,3 +14,7 @@ markdown_extensions:
   - markdown_include.include:
       base_path: .
   - admonition
+nav:
+  - Home: index.md
+  - Формирование Запросов: forming-requests.md
+  - Создание Заявки: create-request.md
