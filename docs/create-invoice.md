@@ -2,5 +2,5 @@
 
 !!! warning
 
-    This project is under active development.
+    Цей запит використовує шифрування, що описанне у [формуванні запитів](forming-requests#_3).
 test
