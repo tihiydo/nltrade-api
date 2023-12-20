@@ -29,3 +29,44 @@
    }
 }
 ```
+Після вам потрібно виконати розшифрування публічного RSA ключа.
+Ключ дешифрується двома етапами. Шифром цезара, а після використанням base64 decode.
+Вам потрібно змістити ваші символи у словарю на -13.
+
+Приклад реалізації шфиру цезаря на Node.js/ES6
+``` js
+const caesarEncrypt = (str, amount) => 
+{
+    if (amount < 0) 
+    {
+        amount += 26;
+    }
+
+    let output = '';
+    for (let i = 0; i < str.length; i++) 
+    {
+        let c = str.charAt(i);
+        if (/[a-z]/i.test(c)) 
+        {
+            let code = str.charCodeAt(i);
+            if (code >= 65 && code <= 90) 
+            {
+                c = String.fromCharCode(((code - 65 + amount) % 26) + 65);
+            } 
+            else if (code >= 97 && code <= 122) 
+            {
+                c = String.fromCharCode(((code - 97 + amount) % 26) + 97);
+            }
+        }
+        output += c;
+    }
+    return output;
+};
+```
+
+Тобто на Node.js/ES6 для дешифрування публічного RSA ключа ви могли б використати такий запис
+``` js
+const rsaKey = caesarEncrypt(atob(jsonResponse.response.data.result), -13)
+```
+
+Ваш ключ ви можете зберегти у себе локально на сервері/комп'ютері.
