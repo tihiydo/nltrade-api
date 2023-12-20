@@ -15,6 +15,6 @@ markdown_extensions:
       base_path: .
   - admonition
 nav:
-  - Home: index.md
-  - Формирование Запросов: forming-requests.md
-  - Создание Заявки: create-request.md
+  - Головна: index.md
+  - Формування запитів: forming-requests.md
+  - Створення запитів: create-request.md
