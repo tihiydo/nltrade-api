@@ -23,6 +23,6 @@
 
 ## Приклад використання
 У прикладі використовується, [функція](forming-requests.md#_5), що використовується у прикладі формуванні запитів.
-``` json
+``` js
 let response = await apiRequest("https://api.nltrade.in/method/RemoteInvoiceApi", {"type": "remove", "uid_link": uid}, token)
 ```
