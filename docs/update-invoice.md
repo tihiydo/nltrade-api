@@ -27,18 +27,18 @@
 
 ## Загальний приклад використання 
 У прикладі використовується, [функція](forming-requests.md#_5), що використовується у прикладі формуванні запитів.
-``` json
+``` js
 let response = await apiRequest("https://api.nltrade.in/method/RemoteInvoiceApi", {"type": "update", "uid_link": invoiceUid, "log": "Заявка оплаченна клієнтом", ... поля що треба оновити}, token)
 ```
 
 ## Приклад оплати користувачем Invoic'у, 
 У прикладі використовується, [функція](forming-requests.md#_5), що використовується у прикладі формуванні запитів.
-``` json
+``` js
 let response = await apiRequest("https://api.nltrade.in/method/RemoteInvoiceApi", {"type": "update", "uid_link": invoiceUid, "status": "pay", "log": "Заявка оплаченна клієнтом"}, token)
 ```
 
 ## Приклад додавання фото користувачем Invoic'у, 
 У прикладі використовується, [функція](forming-requests.md#_5), що використовується у прикладі формуванні запитів.
-``` json
+``` js
 request = await apiRequest("https://api.nltrade.in/method/RemoteInvoiceApi", {"type": "update", "uid_link": invoiceUid, "status": "notApprove", "approve_photo": photoUrl, "log": "Фото підтвердження відправленно"}, token)
 ```
