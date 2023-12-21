@@ -25,9 +25,53 @@
 ## Приклад поверненного JSON
 ``` json
 {
-    Тут приклад
+    "status": true,
+    "response": {
+        "data": {
+            "invoice": [
+                {
+                    "id": "490",
+                    "telegram_id": "24234234234",
+                    "trader_id": "4",
+                    "name_ex": "TestEx",
+                    "send_value": "1",
+                    "recive_value": "0.03",
+                    "currency": "39.81",
+                    "card_f_pay": "9999-9999-9999-9999",
+                    "msg": null,
+                    "approve_photo": null,
+                    "technical": null,
+                    "status": "notApprove",
+                    "date": "2023-12-19 16:08:48",
+                    "codeex": null,
+                    "pay_info": null,
+                    "trader_photo": null,
+                    "pay_date": null,
+                    "uid_link": "ngyt8761x4fvwo2jz0a5cr3ihubdle",
+                    "ip": "37.72.44.30",
+                    "payment_timeout": "960",
+                    "accept_date": "2023-12-19 16:09:24",
+                    "exchange_log": "[{\"date\":\"2023-12-19 16:08:48\",\"status\":\"Инвойс создан\"}",
+                    "trader_change_price": null,
+                    "exchange_type": "invoice",
+                    "user_id": null
+                }
+            ]
+        }
+    }
 }
 ```
+
+## Типи статусів заявки
+    'not approve exchange': 'Заявка ще не прийнята трейдером',
+    'canceled': 'Скасовано',
+    'rejected': 'Скасовано, через закінченння часу',
+    "send card": 'Очікується оплата клієнтом',
+    "wait card": 'Очікування картки від трейдера',
+    'pay': 'Перевірка оплати трейдером',
+    'success': 'Виконано успішно',
+    'waitPhoto': 'Очікуванння фото підтвердження від клієнта',
+    'notApprove': 'Адміністратор розглядає заявку'
 
 ## Приклад використання
 У прикладі використовується, [функція](forming-requests.md#_5), що використовується у прикладі формуванні запитів.
