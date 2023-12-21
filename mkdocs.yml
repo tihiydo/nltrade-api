@@ -19,4 +19,5 @@ nav:
   - Формування запитів: forming-requests.md
   - Створення Invoice: create-invoice.md
   - Видалення Invoice: remove-invoice.md
-  - Процесс виконання заявки: proccess-invoice.md
+  - Отримання інформації про Invoice
+  - Процесс виконання Invoic'у: proccess-invoice.md
