@@ -20,4 +20,5 @@ nav:
   - Створення Invoice: create-invoice.md
   - Видалення Invoice: remove-invoice.md
   - Отримання інформації про Invoice: get-invoice.md
-  - Процесс виконання Invoic'у: proccess-invoice.md
+  - Процесс виконання Invoice: proccess-invoice.md
+  - Процесс оновлення данних Invoice: update-invoice.md
