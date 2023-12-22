@@ -24,7 +24,7 @@
 Також повертається `JSON` поле `response.data.yourLink`, що містить `UID` вашої створенної заявки.
 
 ## Приклад використання
-У прикладі використовується, [функція](forming-requests.md#_5), що використовується у прикладі формуванні запитів.
+В прикладі використовується [функція](forming-requests.md#_5), яка застосовується для створення запитів.
 ``` js
 let response = await apiRequest("https://api.nltrade.in/method/RemoteInvoiceApi", {"type": "create", "title": title, "price": price}, token)
 ```
