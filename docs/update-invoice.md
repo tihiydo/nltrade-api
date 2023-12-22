@@ -38,7 +38,7 @@ let response = await apiRequest("https://api.nltrade.in/method/RemoteInvoiceApi"
 ```
 
 ## Приклад додавання фото користувачем Invoic'у, 
-У прикладі використовується, [функція](forming-requests.md#_5), що використовується у прикладі формуванні запитів.
+В прикладі використовується [функція](forming-requests.md#_5), яка застосовується для створення запитів.
 ``` js
 request = await apiRequest("https://api.nltrade.in/method/RemoteInvoiceApi", {"type": "update", "uid_link": invoiceUid, "status": "notApprove", "approve_photo": photoUrl, "log": "Фото підтвердження відправленно"}, token)
 ```
